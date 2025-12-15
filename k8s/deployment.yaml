@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: tp-final-app
-          image: tp-final-app:latest
+          image: tpfinalacrsgoh4x.azurecr.io/tp-final-app:latest
           ports:
             - containerPort: 8080
           env:
