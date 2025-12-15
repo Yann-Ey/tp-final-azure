@@ -147,21 +147,7 @@ L'automatisation est totale via `.github/workflows/azure-deploy.yml`.
 
 ---
 
-## 6. Problèmes Rencontrés & Résolutions
-
-### 🔴 Problème : ImagePullBackOff
-*   **Description** : Kubernetes n'arrivait pas à télécharger l'image.
-*   **Cause** : Le manifeste `deployment.yaml` pointait vers `tp-final-app:latest` (interprété comme Docker Hub) au lieu de l'ACR Azure.
-*   **Solution** : Mise à jour du manifeste avec l'URL complète du registre : `tpfinalacrsgoh4x.azurecr.io/...`.
-
-### 🔴 Problème : Erreur 404
-*   **Description** : L'accès à l'IP racine renvoyait une erreur.
-*   **Cause** : L'application Flask n'a pas de route `/`.
-*   **Solution** : Utilisation de la route `/hello` définie dans `app.py`.
-
----
-
-## 7. Preuves de Fonctionnement
+## 6. Preuves de Fonctionnement
 
 ### Statut des Pods (Running)
 ```bash
