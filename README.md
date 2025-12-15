@@ -2,6 +2,10 @@
 
 Ce projet déploie une application Flask simple sur Azure Kubernetes Service (AKS) via une pipeline CI/CD GitHub Actions.
 
+> [!NOTE]
+> Déploiement automatique via GitHub Actions.
+
+
 ## Structure du Projet
 
 - `app.py` : Application Flask (API REST).
